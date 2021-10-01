@@ -6,10 +6,12 @@
 
 # Solidity Language Support, Syntax Highlighting, and Themes for VSCode
 
-This extension enables solidity code highlighting for VSCode. It **only** provides the language support and themes compatible with VSCode web. You probably want to install [Solidity Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-visual-auditor) to get access to all the fancy features.
+This extension enables solidity code highlighting for VSCode. It **only provides the language support** and themes, no active decoration or functionality. 
 
-* This is part of [Solidity Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-visual-auditor).
-* Released as a passive language provider with themes to enable it for VSCode-Web @ https://github.dev/.
+In an effort to be more modular and also provide solidity language support and themes to VSCode Web or https://github.dev. This used to be inlined into [Solidity Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-visual-auditor) and unless you're installing this on VSCode Web you probably want to install [Solidity Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-visual-auditor) to get access to all the fancy features 🤗.
+
+* This is also part of [Solidity Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-visual-auditor).
+* Released as a passive language provider with themes to provide solidity language support for VSCode-Web @ https://github.dev/.
 
 
 ## Theme: Solidity Visual Developer Light (VSCode)
