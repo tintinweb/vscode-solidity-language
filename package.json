@@ -1,0 +1,84 @@
+{
+    "name": "vscode-solidity-language",
+    "displayName": "Solidity Language & Themes (only)",
+    "description": "Solidity Language Support, Syntax Highlighting, and Themes",
+    "publisher": "tintinweb",
+    "icon": "images/icon.png",
+    "preview": true,
+    "version": "0.0.4",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "keywords": [
+        "solidity",
+        "ethereum",
+        "blockchain",
+        "security",
+        "audit",
+        "review",
+        "developer",
+        "solidity security",
+        "solidity audit",
+        "language",
+        "theme"
+    ],
+    "categories": [
+        "Programming Languages"
+    ],
+    "bugs": {
+        "url": "https://github.com/tintinweb/vscode-solidity-language/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tintinweb/vscode-solidity-language"
+    },
+    "scripts": {
+        "test": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. --extensionTestsPath=dist/web/test/suite/index.js",
+        "run-in-browser": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ."
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "solidity",
+                "aliases": [
+                    "solidity",
+                    "solidity"
+                ],
+                "extensions": [
+                    ".sol"
+                ],
+                "configuration": "./src/language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "solidity",
+                "scopeName": "source.solidity.security",
+                "path": "./src/syntaxes/solidity.tmLanguage.json",
+                "injectTo": [
+                    "source.solidity"
+                ]
+            }
+        ],
+        "themes": [
+            {
+                "label": "Solidity Visual Developer Dark",
+                "uiTheme": "vs-dark",
+                "path": "./src/themes/OneDarkAuditor.json"
+            },
+            {
+                "label": "Solidity Visual Developer Solarized Light",
+                "uiTheme": "vs",
+                "path": "./src/themes/solarized-light-color-theme.json"
+            },
+            {
+                "label": "Solidity Visual Developer Light (Visual Studio)",
+                "uiTheme": "vs",
+                "path": "./src/themes/light_vs.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "@vscode/test-web": "^0.0.15"
+    }
+}
