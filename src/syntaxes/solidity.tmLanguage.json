@@ -42,6 +42,9 @@
             "include": "#assembly"
         },
         {
+            "include": "#uncheckedBlock"
+        },
+        {
             "include": "#punctuation"
         }
     ],
@@ -217,7 +220,7 @@
             ]
         },
         "control-flow": {
-            "match": "\\b(if|else|for|while|do|break|continue|throw|returns?)\\b",
+            "match": "\\b(if|else|for|while|do|break|try|catch|continue|throw|returns?)\\b",
             "name": "keyword.control.flow.solidity"
         },
         "control-using": {
@@ -415,6 +418,9 @@
                     "include": "#declaration-function-fallback"
                 },
                 {
+                    "include": "#declaration-function-receive"
+                },
+                {
                     "include": "#declaration-function"
                 },
                 
@@ -482,7 +488,7 @@
             }
         },
         "declaration-event": {
-            "match": "\\b(event)(\\s+([A-Za-z_]\\w*))?\\b",
+            "match": "\\b(error|event)(\\s+([A-Za-z_]\\w*))?\\b",
             "captures": {
                 "1": {
                     "name": "storage.type.event.solidity"
@@ -524,8 +530,12 @@
             ]
         },
         "declaration-function-fallback": {
-            "match": "\\b(function)\\s*\\(\\s*\\)",
+            "match": "\\b(function|fallback)\\s*\\(\\s*\\)",
             "name": "storage.type.function.fallback.solidity"
+        },
+        "declaration-function-receive": {
+            "match": "\\b(receive)\\s*\\(\\s*\\)",
+            "name": "storage.type.function.receive.solidity"
         },
         "declaration-function": {
             "begin": "\\b(function)\\s+([A-Za-z_]\\w*)\\b",
@@ -636,6 +646,14 @@
                 {
                     "match": "\\b(let)\\b",
                     "name": "storage.type.assembly.solidity"
+                }
+            ]
+        },
+        "uncheckedBlock": {
+            "patterns": [
+                {
+                    "match": "\\b(unchecked)\\b",
+                    "name": "keyword.control.unchecked.solidity"
                 }
             ]
         },
