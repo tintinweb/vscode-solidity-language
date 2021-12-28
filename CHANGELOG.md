@@ -2,6 +2,10 @@
 
 All notable changes to the "vscode-solidity-language" extension will be documented in this file.
 
-## v0.1.0
+## v0.0.6
+
+- fix: match ucase const - #1
+
+## v0.0.5
 
 - Initial release
