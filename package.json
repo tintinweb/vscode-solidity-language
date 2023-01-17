@@ -5,7 +5,7 @@
     "publisher": "tintinweb",
     "icon": "images/icon.png",
     "preview": true,
-    "version": "0.0.6",
+    "version": "0.0.7",
     "engines": {
         "vscode": "^1.60.0"
     },
@@ -79,6 +79,6 @@
         ]
     },
     "devDependencies": {
-        "@vscode/test-web": "^0.0.15"
+        "@vscode/test-web": "^0.0.34"
     }
 }

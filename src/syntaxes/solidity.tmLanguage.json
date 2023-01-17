@@ -574,7 +574,7 @@
         "declaration-visibility": {
             "patterns": [
                 {
-                    "match": "\\b(private|internal|constant|pure|view|nonpayable|indexed)\\b",
+                    "match": "\\b(private|internal|constant|immutable|pure|view|nonpayable|indexed)\\b",
                     "name": "storage.type.modifier.keyword.solidity"
                 },
                 {
