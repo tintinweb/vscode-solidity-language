@@ -282,7 +282,7 @@
             "name": "constant.language.currency.solidity"
         },
         "constant-ucase": {
-            "match": "\\b([A-Z0-9_]+)\\b",
+            "match": "\\b((?=\\D)[A-Z_0-9]+)\\b",
             "name": "constant.language.ucase.solidity"
         },
         "number": {
