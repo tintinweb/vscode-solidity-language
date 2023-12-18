@@ -323,7 +323,7 @@
             ]
         },
         "type-primitive": {
-            "match": "\\b(address|string\\d*|bytes\\d*|int\\d*|uint\\d*|bool|hash\\d*|var)\\b",
+            "match": "\\b(address|string\\d*|bytes\\d*|int\\d*|uint\\d*|bool|var)\\b",
             "name": "support.type.primitive.solidity"
         },
         "global": {
