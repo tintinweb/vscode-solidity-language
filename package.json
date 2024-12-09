@@ -80,5 +80,6 @@
     },
     "devDependencies": {
         "@vscode/test-web": "^0.0.34"
-    }
+    },
+    "license": "MIT"
 }
